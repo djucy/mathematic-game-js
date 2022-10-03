@@ -1,12 +1,12 @@
 {
-  "name": "parcel-project-template",
+  "name": "mathematic-game-js",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://djucy.github.io/mathematic-game-js",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /mathematic-game-js/"
   },
   "repository": {
     "type": "git",
