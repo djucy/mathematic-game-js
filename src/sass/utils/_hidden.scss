@@ -5,8 +5,10 @@ image{
 body{
   width:100vw;
   height: 100vh;
+  background-color: darkgoldenrod;
 }
 
 .hidden{
-  visibility: hidden;
+  // visibility: hidden;
+  display: none;
 }

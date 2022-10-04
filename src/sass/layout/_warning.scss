@@ -1,0 +1,12 @@
+.warning_container{
+  display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    // justify-content: center;
+    align-items: center;
+}
+
+.warning_title{
+  font-size: 30px;
+    font-weight: 700;
+}

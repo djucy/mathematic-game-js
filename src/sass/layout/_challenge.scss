@@ -1,0 +1,25 @@
+.challenge_container{
+  display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    // justify-content: center;
+    align-items: center;
+}
+
+.challenge_question{
+
+    font-size: 30px;
+    font-weight: 700;
+}
+.challenge_answer{
+  text-align: center;
+  width: 200px;
+  height: 35px;
+
+    font-size: 30px;
+      font-weight: 700;
+  border-radius:5px;
+}
+.challenge_button{
+  margin-top: 50px;
+}
