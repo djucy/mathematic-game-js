@@ -30,6 +30,7 @@ function startChalenge() {
 
   toggleHidden(refs.heroContainer, refs.chalengeBox);
   refs.question.textContent = `How much is ${numbers['3']} + ${numbers['4']}?`;
+  refs.answer.focus();
 }
 
 function checkAnswer() {
@@ -54,6 +55,7 @@ function backToChallenge() {
 }
 function nextQuestion(numberA, numberB) {
   refs.answer.value = '';
+  refs.answer.focus();
   refs.question.textContent = `How much is ${numberA} + ${numberB}?`;
 }
 function toggleHidden(hidden, visible) {
