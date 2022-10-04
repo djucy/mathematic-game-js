@@ -32,19 +32,12 @@ function startChalenge() {
   refs.question.textContent = `How much is ${numbers['3']} + ${numbers['4']}?`;
 }
 
-function toggleHidden(hidden, visible) {
-  hidden.classList.add('hidden');
-  visible.classList.remove('hidden');
-}
-
 function checkAnswer() {
   result = refs.answer.value;
   if (numbers['3'] && numbers['4'] && result === '7') {
-    refs.answer.value = '';
-    refs.question.textContent = `How much is ${numbers['5']} + ${numbers['7']}?`;
+    nextQuestion(numbers['5'], numbers['7']);
   } else if (numbers['5'] && numbers['7'] && result === '12') {
-    refs.answer.value = '';
-    refs.question.textContent = `How much is ${numbers['6']} + ${numbers['8']}?`;
+    nextQuestion(numbers['6'], numbers['8']);
   } else if (numbers['6'] && numbers['8'] && result === '14') {
     bodyStyle.backgroundImage = `url(${image})`;
     bodyStyle.backgroundPosition = 'center';
@@ -58,4 +51,12 @@ function checkAnswer() {
 function backToChallenge() {
   toggleHidden(refs.warningBox, refs.chalengeBox);
   refs.answer.value = '';
+}
+function nextQuestion(numberA, numberB) {
+  refs.answer.value = '';
+  refs.question.textContent = `How much is ${numberA} + ${numberB}?`;
+}
+function toggleHidden(hidden, visible) {
+  hidden.classList.add('hidden');
+  visible.classList.remove('hidden');
 }
