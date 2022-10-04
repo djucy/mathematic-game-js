@@ -1,1 +1,0 @@
-{"version":3,"sources":["sass/utils/_hidden.scss"],"names":[],"mappings":"AAAA,MACE,aAAA,CACA,WAEF,KACE,WAAA,CACA,aAGF,QACE","file":"src.2ac2babf.css","sourceRoot":"../src","sourcesContent":["image{\n  display: block;\n  width: 100%;\n}\nbody{\n  width:100vw;\n  height: 100vh;\n}\n\n.hidden{\n  visibility: hidden;\n}"]}
