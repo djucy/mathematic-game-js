@@ -23,8 +23,8 @@ function challengeQuestion() {
 
 function checkAnswer() {
   if (refs.answer.value === numbers[currentQuestion].result) {
-    console.log(numbers[currentQuestion].result);
     refs.answer.value = '';
+
     if (numbers.length === currentQuestion + 1) {
       currentQuestion = 0;
       bodyStyle.backgroundImage = `url(${image})`;
@@ -33,10 +33,9 @@ function checkAnswer() {
       bodyStyle.backgroundRepeat = 'no-repeat';
       refs.chalengeBox.classList.add('hidden');
     }
+
     currentQuestion = currentQuestion + 1;
     challengeQuestion();
-
-    console.log(currentQuestion);
   } else {
     toggleHidden(refs.chalengeBox, refs.warningBox);
   }
@@ -44,4 +43,5 @@ function checkAnswer() {
 function backToChallenge() {
   toggleHidden(refs.warningBox, refs.chalengeBox);
   refs.answer.value = '';
+  refs.answer.focus();
 }
