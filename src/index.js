@@ -11,7 +11,7 @@ const refs = {
   warningButton: document.querySelector('.warning_button'),
   resultButton: document.querySelector('.challenge_button'),
 };
-const bodyStyle = document.body.style;
+
 const numbers = {
   3: 3,
   4: 4,

@@ -1,0 +1,7 @@
+[
+  { "numberA": 3, "numberB": 7, "result": "10" },
+  { "numberA": 3, "numberB": 4, "result": "7" },
+  { "numberA": 2, "numberB": 1, "result": "3" },
+  { "numberA": 10, "numberB": 2, "result": "12" },
+  { "numberA": 7, "numberB": 10, "result": "17" }
+]
