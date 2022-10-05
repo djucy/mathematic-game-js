@@ -6,8 +6,11 @@ import toggleHidden from './toggleHidden';
 
 refs.heroButton.addEventListener('click', startChalenge);
 refs.warningButton.addEventListener('click', backToChallenge);
+refs.resultButton.addEventListener('click', checkAnswer);
+
 const bodyStyle = document.body.style;
 let currentQuestion = 0;
+
 function startChalenge() {
   toggleHidden(refs.heroContainer, refs.chalengeBox);
   challengeQuestion();
@@ -16,7 +19,6 @@ function startChalenge() {
 function challengeQuestion() {
   refs.question.textContent = `How much is ${numbers[currentQuestion].numberA} + ${numbers[currentQuestion].numberB}?`;
   refs.answer.focus();
-  refs.resultButton.addEventListener('click', checkAnswer);
 }
 
 function checkAnswer() {
