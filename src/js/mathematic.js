@@ -22,7 +22,9 @@ function challengeQuestion() {
 }
 
 function checkAnswer() {
-  if (refs.answer.value === numbers[currentQuestion].result) {
+  let result = numbers[currentQuestion].numberA + numbers[currentQuestion].numberB;
+
+  if (Number(refs.answer.value) === result) {
     refs.answer.value = '';
 
     if (numbers.length === currentQuestion + 1) {
